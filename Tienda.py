@@ -6,7 +6,7 @@ class Tienda:
         if producto.tiene_unidades(cantidad):
             usuario.agregar_item_a_carrito(producto, cantidad)
         else:
-            print("No hay suficientes unidades disponibles.")
+            print(f"No hay suficientes unidades disponibles del {producto.nombre}.")
 
     def eliminar_item_de_carrito(self, usuario, item):
         usuario.eliminar_producto_de_carrito(item)
